@@ -9,6 +9,8 @@
 import UIKit
 
 class FuzzyTableViewController: UITableViewController {
+    
+    var name: String = "dan"
 
     override func viewDidLoad() {
         super.viewDidLoad()
