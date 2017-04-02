@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A8E3D2FA1E8EAB9300DA94CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3D2F91E8EAB9300DA94CF /* AppDelegate.swift */; };
-		A8E3D2FC1E8EAB9300DA94CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3D2FB1E8EAB9300DA94CF /* ViewController.swift */; };
 		A8E3D2FF1E8EAB9300DA94CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E3D2FD1E8EAB9300DA94CF /* Main.storyboard */; };
 		A8E3D3011E8EAB9300DA94CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E3D3001E8EAB9300DA94CF /* Assets.xcassets */; };
 		A8E3D3041E8EAB9300DA94CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E3D3021E8EAB9300DA94CF /* LaunchScreen.storyboard */; };
+		A8E3D30C1E8EABB700DA94CF /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = A8E3D30B1E8EABB700DA94CF /* dictionary.json */; };
+		A8E3D3111E8ED5BE00DA94CF /* FuzzyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E3D3101E8ED5BE00DA94CF /* FuzzyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8E3D2F61E8EAB9300DA94CF /* FuzzySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuzzySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8E3D2F91E8EAB9300DA94CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8E3D2FB1E8EAB9300DA94CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8E3D2F91E8EAB9300DA94CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FuzzySearch/AppDelegate.swift; sourceTree = "<group>"; };
 		A8E3D2FE1E8EAB9300DA94CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A8E3D3001E8EAB9300DA94CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E3D3001E8EAB9300DA94CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FuzzySearch/Assets.xcassets; sourceTree = "<group>"; };
 		A8E3D3031E8EAB9300DA94CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A8E3D3051E8EAB9300DA94CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E3D3051E8EAB9300DA94CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FuzzySearch/Info.plist; sourceTree = "<group>"; };
+		A8E3D30B1E8EABB700DA94CF /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
+		A8E3D3101E8ED5BE00DA94CF /* FuzzyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuzzyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,8 @@
 		A8E3D2ED1E8EAB9300DA94CF = {
 			isa = PBXGroup;
 			children = (
+				A8E3D2FD1E8EAB9300DA94CF /* Main.storyboard */,
+				A8E3D30D1E8EAE1F00DA94CF /* Resourse */,
 				A8E3D2F81E8EAB9300DA94CF /* FuzzySearch */,
 				A8E3D2F71E8EAB9300DA94CF /* Products */,
 			);
@@ -54,14 +58,21 @@
 		A8E3D2F81E8EAB9300DA94CF /* FuzzySearch */ = {
 			isa = PBXGroup;
 			children = (
+				A8E3D30B1E8EABB700DA94CF /* dictionary.json */,
+				A8E3D3101E8ED5BE00DA94CF /* FuzzyTableViewController.swift */,
+			);
+			path = FuzzySearch;
+			sourceTree = "<group>";
+		};
+		A8E3D30D1E8EAE1F00DA94CF /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
 				A8E3D2F91E8EAB9300DA94CF /* AppDelegate.swift */,
-				A8E3D2FB1E8EAB9300DA94CF /* ViewController.swift */,
-				A8E3D2FD1E8EAB9300DA94CF /* Main.storyboard */,
 				A8E3D3001E8EAB9300DA94CF /* Assets.xcassets */,
 				A8E3D3021E8EAB9300DA94CF /* LaunchScreen.storyboard */,
 				A8E3D3051E8EAB9300DA94CF /* Info.plist */,
 			);
-			path = FuzzySearch;
+			name = Resourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E3D3041E8EAB9300DA94CF /* LaunchScreen.storyboard in Resources */,
+				A8E3D30C1E8EABB700DA94CF /* dictionary.json in Resources */,
 				A8E3D3011E8EAB9300DA94CF /* Assets.xcassets in Resources */,
 				A8E3D2FF1E8EAB9300DA94CF /* Main.storyboard in Resources */,
 			);
@@ -137,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E3D2FC1E8EAB9300DA94CF /* ViewController.swift in Sources */,
+				A8E3D3111E8ED5BE00DA94CF /* FuzzyTableViewController.swift in Sources */,
 				A8E3D2FA1E8EAB9300DA94CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +163,7 @@
 				A8E3D2FE1E8EAB9300DA94CF /* Base */,
 			);
 			name = Main.storyboard;
+			path = FuzzySearch;
 			sourceTree = "<group>";
 		};
 		A8E3D3021E8EAB9300DA94CF /* LaunchScreen.storyboard */ = {
@@ -159,6 +172,7 @@
 				A8E3D3031E8EAB9300DA94CF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = FuzzySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
